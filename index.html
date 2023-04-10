@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div id="page">
+      <div id="top" class="content">
+        <div class="logo">LOGO</div>
+        <div id="top-content">
+          <a href="javascript:void (0)"><img src="./img/铃铛.png" alt="/" /></a>
+          <a href="javascript:void (0)"><img src="./img/设置.png" alt="/" /></a>
+          <button type="button" class="login">Log Out</button>
+        </div>
+      </div>
+      <div id="main" class="content">
+        <div id="main-top">
+          <div id="main-title">
+            <h2>Audience Overview</h2>
+            <p>Roseville,CA</p>
+          </div>
+          <div id="menu">
+            <nav>
+              <ul>
+                <li class="menu-item-activate">
+                  <a href="javascript:void (0)">DASHBOARD</a>
+                </li>
+                <li><a href="javascript:void (0)">PROJECTS</a></li>
+                <li><a href="javascript:void (0)">CALENDAR</a></li>
+                <li><a href="javascript:void (0)">MAILBOX</a></li>
+                <li><a href="javascript:void (0)">SETTINGS</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <div class="clear-float"></div>
+        <div id="main-content">
+          <div id="slideshow">
+            <div id="slideshow-wrapper">
+              <img src="./img/1.jpg" alt="/" />
+              <img src="./img/2.jpg" alt="/" />
+              <img src="./img/3.jpg" alt="/" />
+              <img src="./img/4.jpg" alt="/" />
+              <img src="./img/5.jpg" alt="/" />
+            </div>
+
+            <div id="slideshow-prev">
+              <a href="javascript:void (0)"><</a>
+            </div>
+            <div id="slideshow-next">
+              <a href="javascript:void (0)">></a>
+            </div>
+            <ul class="slideshow-boxes"></ul>
+          </div>
+          <div id="support">
+            <div id="support-title">
+              <span>Support Requests</span>
+              <button type="button" class="support-button">View All</button>
+            </div>
+            <div id="support-content">
+              <table>
+                <thead>
+                  <th>TIME</th>
+                  <th>USER NAME</th>
+                  <th>STATUS</th>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>9:45pm</td>
+                    <td>info@design.com</td>
+                    <td><span>Solved</span></td>
+                  </tr>
+                  <tr>
+                    <td>9:45pm</td>
+                    <td>info@design.com</td>
+                    <td><span>Solved</span></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <div id="chart-sine"></div>
+
+          <div id="chart-pine"></div>
+
+          <div id="chart-bar"></div>
+        </div>
+      </div>
+
+      <div id="foot">
+        <div id="foot-content" class="content">
+          <div class="logo">LOGO</div>
+          <div id="links">
+            <ul>
+              <li><a href="javascript:void (0)">NEWS</a></li>
+              <li><a href="javascript:void (0)">CHANNELS</a></li>
+              <li><a href="javascript:void (0)">OVERVIEW</a></li>
+              <li><a href="javascript:void (0)">TIMELINE</a></li>
+            </ul>
+            <ul>
+              <li><a href="javascript:void (0)">SPORT</a></li>
+              <li><a href="javascript:void (0)">CULTURE</a></li>
+              <li><a href="javascript:void (0)">NATURE</a></li>
+              <li><a href="javascript:void (0)">MUSIC</a></li>
+            </ul>
+            <ul>
+              <li><a href="javascript:void (0)">WEATHER</a></li>
+              <li><a href="javascript:void (0)">AUTOS</a></li>
+              <li><a href="javascript:void (0)">LOCAL</a></li>
+              <li><a href="javascript:void (0)">SHOP</a></li>
+            </ul>
+            <ul>
+              <li><a href="javascript:void (0)">FUTURE</a></li>
+              <li><a href="javascript:void (0)">FOOD</a></li>
+              <li><a href="javascript:void (0)">EARTH</a></li>
+              <li><a href="javascript:void (0)">TV</a></li>
+            </ul>
+            <ul>
+              <li><a href="javascript:void (0)">TRAVEL</a></li>
+              <li><a href="javascript:void (0)">RADIO</a></li>
+            </ul>
+          </div>
+        </div>
+        <div id="bottom"></div>
+      </div>
+      <script src="./js/echarts.min.js"></script>
+      <script src="./js/chart.js"></script>
+      <script src="./js/nav.js"></script>
+      <script src="./js/slideshow.js"></script>
+    </div>
+  </body>
+</html>
+
+<script type="text/javascript">
+  nav_event();
+  slideshow_event();
+  slideshow_arrow_event();
+</script>
