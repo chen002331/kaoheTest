@@ -11,10 +11,10 @@ async function change_slideBox(value) {
 
   slideWrap.style.left = -value * slideImg_width + "px";
 
-  await slideBoxes_list[selected].firstElementChild.classList.remove(
+  slideBoxes_list[selected].firstElementChild.classList.remove(
     "slideshow-box-activate"
   );
-  await slideBoxes_list[value].firstElementChild.classList.add(
+  slideBoxes_list[value].firstElementChild.classList.add(
     "slideshow-box-activate"
   );
   selected = value;
@@ -64,13 +64,13 @@ async function slide_next_event() {
     slideWrap.style.left = slideImgs_length * -slideImg_width + "px";
     setTimeout(async () => {
       slideWrap.style.transition = "none";
-      await change_slideBox(0);
+      change_slideBox(0);
       locked = true;
-    }, 500);
+    }, 450);
     setTimeout(() => {
       slideWrap.style.transition = "0.5s ease";
       locked = false;
-    }, 600);
+    }, 500);
   } else {
     change_slideBox(selected + 1);
   }
