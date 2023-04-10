@@ -160,6 +160,7 @@ a {
   bottom: -50%;
   background-color: #03060d;
   opacity: 0.6;
+  text-align: center;
 }
 
 #slideshow-prev img,
@@ -171,7 +172,7 @@ a {
 #slideshow-prev a,
 #slideshow-next a {
   font-size: 24px;
-  text-align: center;
+
   line-height: 36px;
   color: #f2f3f3;
   font-weight: bold;

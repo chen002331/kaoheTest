@@ -126,6 +126,9 @@ async function bar() {
         fontWeight: "normal",
       },
     },
+    tooltip: {
+      trigger: "item",
+    },
     grid: {
       width: 443,
       height: 190,
